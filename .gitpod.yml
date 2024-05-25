@@ -1,8 +1,6 @@
-image:
-  file: .gitpod.Dockerfile
-
 tasks:
   - init: |
       sudo apt-get update
-      sudo apt-get install -y qemu
+      sudo apt-get install -y qemu-system-x86
+    command: qemu-system-x86 --version
     command: echo "QEMU kurulumu tamamlandı ve çalışmaya hazır!"
